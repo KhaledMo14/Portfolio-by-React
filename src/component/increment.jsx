@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { Button } from 'react-bootstrap';
 
 const increment = (props)=> { 
@@ -13,7 +13,7 @@ const increment = (props)=> {
             props.setcount(props.count-1)
         } 
      }
-    return <div class="my-4">
+    return <div className="my-4">
 
         <h2>{props.count}</h2>
 
