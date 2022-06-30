@@ -1,0 +1,10 @@
+.p-card img {
+    width: 250px;
+    height: 280px;
+    display: block;
+    margin: auto;
+}
+
+.p-card .card-title {
+    height: 150px;
+}

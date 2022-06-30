@@ -10,26 +10,33 @@ function NavBar() {
     <Navbar bg="light" expand="lg">
       <Container>
 
-      <Nav.Link className='mx-2'>
-            <Link to='/'>NavBar</Link>
+      <Nav.Link className='mx-2' as ={Link} to='/'>
+             NavBar
             </Nav.Link>
 
           <Nav className="ms-auto">
-            <Nav.Link className='mx-2'>
-            <Link to='/'>Home</Link>
+
+          <Nav.Link className='mx-2' as ={Link} to='/'>
+            Home
             </Nav.Link>
 
-            <Nav.Link className='mx-2'>
-            <Link to='/about'>About</Link>
+
+            <Nav.Link className='mx-2' as ={Link} to='/about'>
+            About
             </Nav.Link>
 
-           <Nav.Link className='mx-2'>
-            <Link to='/shop'>Shop</Link>
+            <Nav.Link className='mx-2' as ={Link} to='/shop'>
+             Shop
             </Nav.Link>
 
-           <Nav.Link className='mx-2'>
-            <Link to='/state'>Counter</Link>
+            <Nav.Link className='mx-2' as ={Link} to='/counter'>
+             Counter
             </Nav.Link>
+
+            <Nav.Link className='mx-2' as ={Link} to='/todo'>
+             Todo-list
+            </Nav.Link>
+
           </Nav>
       </Container>
     </Navbar>
