@@ -19,37 +19,31 @@ function ProductDetails() {
   };
 
   const [myProuct, setMyProduct] = useState({});
-  console.log(myProuct)
-  
+  console.log(myProuct);
+
   return (
-<>
-    {
-        myProuct
-
-        ?
-        
-        <div className="text-center row justify-content-center mt-5">
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={myProuct.image} />
-          <Card.Body>
-            <Card.Title>{myProuct.title}</Card.Title>
-            <Card.Text>{myProuct.price}</Card.Text>
-            <Button variant="primary">Buy Now</Button>
-          </Card.Body>
-        </Card>
-      </div>
-
-      :
-       <div className="row justify-content-center mx-auto mt-5">
+    <div>
+      {myProuct.image ? (
+        <div className="w-25 mx-auto text-center py-5">
+          <Card className=" shadow p-3 mb-5 bg-white rounded" style={{ width: "18rem" }}>
+            <Card.Img variant="top" src={myProuct.image} />
+            <Card.Body>
+              <Card.Title>{myProuct.title}</Card.Title>
+              <Card.Text>{myProuct.category}</Card.Text>
+              <Card.Text>price : {myProuct.price} $</Card.Text>
+              <Button variant="primary">Buy Now</Button>
+            </Card.Body>
+          </Card>
+        </div>
+      ) : (
+        <div className="row justify-content-center mt-5">
           <Spinner animation="border" role="status">
-            <span className="visually-hidden">Loading...</span>
+            <span className="visually-hidden"></span>
           </Spinner>
         </div>
-
-    }
-</>
+      )}
+    </div>
   );
 }
-
 
 export default ProductDetails;
