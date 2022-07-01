@@ -4,12 +4,12 @@ import React from 'react';
 import TodoForm from "../../component/todo/TodoForm"
 import TodoList from "../../component/todo/TodoList";
 import './Todo.css';
-import {addTodoAction} from '../../redux' ;
-import {deleteTodoAction} from '../../redux'
+import {addTodoAction} from '../../redux/reducers/todoSlice' ;
+import {deleteTodoAction} from '../../redux/reducers/todoSlice'
 
 function Todo() {
 
-const todos = useSelector( state => state.todos);
+const todos = useSelector( state => state.todo.todos);
  const dispatch = useDispatch();
 
   const addTodo = (task) => {
