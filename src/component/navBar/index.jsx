@@ -37,6 +37,10 @@ function NavBar() {
              Todo-list
             </Nav.Link>
 
+            <Nav.Link className='mx-2' as ={Link} to='/register'>
+             Register
+            </Nav.Link>
+
           </Nav>
       </Container>
     </Navbar>
