@@ -1,30 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./shop.css";
 import Card from "react-bootstrap/Card";
 import Spinner from "react-bootstrap/Spinner";
+import { useSelector, useDispatch } from "react-redux";
+import { getShopItems } from "../../redux/reducers/shopSlice";
 
 function Shop() {
   useEffect(() => {
-    getProduct();
+    dispatch(getShopItems());
   }, []);
 
-  const getProduct = () => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((json) => setProduct(json));
-  };
-  const [product, setProduct] = useState([]);
+  const dispatch = useDispatch();
 
-  console.log(product);
+  const { products, loading } = useSelector((state) => state.product);
 
   return (
     <div className="container">
       <h2 className="text-center">Shop</h2>
 
-      {product.length > 0 ? (
+      {!loading ? (
         <div className="row text-center">
-          {product.map((item, index) => {
+          {products.map((item, index) => {
             return (
               <Link
                 className="col-md-3 my-3"

@@ -8,6 +8,7 @@ import About from "./component/about";
 import Todo from "./pages/todo/Todo";
 import ProductDetails from "./component/shop/productDetails";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Register from "./component/Register"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/counter" element={<State/>} />
         <Route path="/todo" element={<Todo />} />
+        <Route path="/register" element={<Register/>}/>
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
     </BrowserRouter>
