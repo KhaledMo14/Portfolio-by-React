@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body 
+{
+    font-family: "Raleway", sans-serif;
+}
+.bg-img {
+    height: 92vh;
+    background-image: url(../../assets/coding-man.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.home-text {
+    color: rgb(220, 215, 215);
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(101, 95, 95);
+    opacity: 0.6;
+}
+
+.home-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.head h2 {
+    font-size: 4rem;
+    font-family: "Satisfy", serif;
+}
+
+
+.head::after {
+    content: "|";
+    animation-name: typing;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    text-transform: capitalize;
+}
+
+
+.About {
+    padding-top: 8rem;
+    font-family: "Raleway", sans-serif;
+
+}
+
+
+.profile {
+    margin: 3rem 3rem 0rem 3rem;
+    border-radius: .7rem;
+}
+
+
+
+.progress-item {
+    margin: 0rem 2rem;
+}
+
+
+.about-me p {
+    font-size: 1.3rem;
+  
+}
+
+
+.list ul {
+    padding: 0;
+
+}
+
+.list ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.tech-text svg  {
+    font-size: 2rem;
+    color:#007bff;
+}
+
+.tech-list a 
+{
+    margin: 0 5px 10px 0;
+    padding: 7px 20px 4px;
+    border-radius: 50px;
+    background-color:#007bff; 
+    color: white !important;
+}
+
+@media (min-width:735px) and (max-width:1000px)
+{
+  .profile{width: 100%;}
+  .profile-item{font-size: .8rem;}
+}  
+
+
+
+@keyframes typing {
+    0% {
+        content: "F |";
+    }
+
+    2% {
+        content: "Fr |";
+    }
+
+    4% {
+        content: "Fro |";
+    }
+
+    6% {
+        content: "Fron |";
+    }
+
+    8% {
+        content: "Front |";
+    }
+
+    10% {
+        content: "Front E |";
+    }
+
+    12% {
+        content: "Front En |";
+    }
+
+    14% {
+        content: "Front End |";
+    }
+
+    16% {
+        content: "Front End De|";
+    }
+
+    18% {
+        content: "Front End Deve|";
+    }
+
+    20% {
+        content: "Front End Develo|";
+    }
+
+    22% {
+        content: "Front End Developer |";
+    }
+
+    24% {
+        content: "Front End Develo|";
+    }
+
+    26% {
+        content: "Front End DEVE |";
+    }
+
+    28% {
+        content: "Front End DE|";
+    }
+
+    30% {
+        content: "Front End |";
+    }
+
+    32% {
+        content: "Front En |";
+    }
+
+    34% {
+        content: "Front E|";
+    }
+
+    36% {
+        content: "Front|";
+    }
+
+    38% {
+        content: "|";
+    }
+
+    40% {
+        content: "C|";
+    }
+
+    42% {
+        content: "Cro|";
+    }
+
+    44% {
+        content: "Cross|";
+    }
+
+    46% {
+        content: "Cross Pl|";
+    }
+
+    48% {
+        content: "Cross Plat|";
+    }
+
+    50% {
+        content: "Cross PlatF|";
+    }
+
+    52% {
+        content: "Cross PlatFo|";
+    }
+
+    54% {
+        content: "Cross PlatFor|";
+    }
+
+    56% {
+        content: "Cross PlatForm|";
+    }
+
+    58% {
+        content: "Cross PlatFor|";
+    }
+
+    60% {
+        content: "Cross PlatFo|";
+    }
+
+    62% {
+        content: "Cross PlatF|";
+    }
+
+    64% {
+        content: "Cross Plat|";
+    }
+
+    66% {
+        content: "Cross|";
+    }
+
+    68% {
+        content: "C|";
+    }
+
+    70% {
+        content: "Mo|";
+    }
+
+    72% {
+        content: "Mobil|";
+    }
+
+    74% {
+        content: "Mobil|";
+    }
+
+    76% {
+        content: "Mobile|";
+    }
+
+    78% {
+        content: "Mobile De|";
+    }
+
+    80% {
+        content: "Mobile Deve|";
+    }
+
+    82% {
+        content: "Mobile Develo|";
+    }
+
+    84% {
+        content: "Mobile Develope|";
+    }
+
+    86% {
+        content: "Mobile Developer|";
+    }
+
+    88% {
+        content: "Mobile Develope|";
+    }
+
+    90% {
+        content: "Mobile Develo|";
+    }
+
+    92% {
+        content: "Mobile Deve|";
+    }
+
+    94% {
+        content: "Mobile De|";
+    }
+
+    96% {
+        content: "Mobile|";
+    }
+
+    98% {
+        content: "Mobil|";
+    }
+
+    100% {
+        content: "|";
+    }
+}

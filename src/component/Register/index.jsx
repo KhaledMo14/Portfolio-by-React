@@ -3,8 +3,6 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useForm } from "react-hook-form";
 import ReactSelect from "react-select";
-import { useState } from "react";
-import makeAnimated from "react-select/animated";
 
 const Register = () => {
   const {
@@ -91,7 +89,7 @@ const Register = () => {
           {...register("Confirm", {
             required: true,
             validate: (val) => {
-              if (watch("password") != val) {
+              if (watch("password") !== val) {
                 return "your password do not match";
               }
             },

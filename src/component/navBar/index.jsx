@@ -7,22 +7,17 @@ import './nav.css'
 
 function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" variant="dark">
       <Container>
 
       <Nav.Link className='mx-2' as ={Link} to='/'>
-             NavBar
+            Khaled Mohamed
             </Nav.Link>
 
           <Nav className="ms-auto">
 
           <Nav.Link className='mx-2' as ={Link} to='/'>
             Home
-            </Nav.Link>
-
-
-            <Nav.Link className='mx-2' as ={Link} to='/about'>
-            About
             </Nav.Link>
 
             <Nav.Link className='mx-2' as ={Link} to='/shop'>
