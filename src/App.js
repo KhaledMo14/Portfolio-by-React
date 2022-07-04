@@ -8,10 +8,14 @@ import About from "./component/about";
 import Todo from "./pages/todo/Todo";
 import ProductDetails from "./component/shop/productDetails";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Register from "./component/Register"
+import Register from "./component/Register" ;
+// import 'font-awesome/css/font-awesome.min.css' ;
+// import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+
 
 function App() {
   return (
+    
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -24,6 +28,7 @@ function App() {
         <Route path="/register" element={<Register/>}/>
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
+  
     </BrowserRouter>
   );
 }

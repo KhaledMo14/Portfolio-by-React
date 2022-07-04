@@ -7,14 +7,14 @@ import { useSelector, useDispatch } from "react-redux";
 import { getShopItems } from "../../redux/reducers/shopSlice";
 
 function Shop() {
+  const dispatch = useDispatch();
+  const { products, loading } = useSelector((state) => state.product)
+
   useEffect(() => {
     dispatch(getShopItems());
   }, []);
 
-  const dispatch = useDispatch();
-
-  const { products, loading } = useSelector((state) => state.product);
-
+ 
   return (
     <div className="container">
       <h2 className="text-center">Shop</h2>

@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux/es/hooks/useDispatch";
 import React from 'react';
 import TodoForm from "../../component/todo/TodoForm"
 import TodoList from "../../component/todo/TodoList";
-import './Todo.css';
 import {addTodoAction} from '../../redux/reducers/todoSlice' ;
 import {deleteTodoAction} from '../../redux/reducers/todoSlice'
 
